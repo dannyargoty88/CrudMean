@@ -1,0 +1,34 @@
+
+<div class="container">
+    <h1>Crear Auto</h1>
+    <form class="form-horizontal" (ngSubmit) = "registrar()" ngNativeValidate>
+        <div class="form-group">
+            <div class="mb-3">
+                <label class="form-label">Marca</label>
+                <input type="text" id="text_marca" class="form-control" required
+                    [(ngModel)]='nuevoAuto.marca'
+                    [ngModelOptions]="{standalone: true}"
+                />
+
+                <label class="form-label">Modelo</label>
+                <input type="number" id="text_modelo" class="form-control" required
+                    [(ngModel)]='nuevoAuto.modelo'
+                    [ngModelOptions]="{standalone: true}"
+                />
+
+                <label class="form-label">Color</label>
+                <input type="text" id="text_color" class="form-control" required
+                    [(ngModel)]='nuevoAuto.color'
+                    [ngModelOptions]="{standalone: true}"
+                />
+
+                <label class="form-label">Precio</label>
+                <input type="number" id="text_precio" class="form-control"  required
+                    [(ngModel)]='nuevoAuto.precio'    
+                    [ngModelOptions]="{standalone: true}"                
+                />
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </div>
+    </form>
+</div>
